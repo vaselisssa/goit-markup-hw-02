@@ -1,0 +1,107 @@
+/* цвет основного текста color: #212121; 
+вторичный цвет color: #757575;
+color: #2196F3; #000000
+color: #FFFFFF;
+
+фон героя и подвала  #2F303A
+фон наша команда background: #F5F4FA;
+
+тел и емейл шапка color: #757575;
+тел и емейл подвал color: rgba(255, 255, 255, 0.6);
+
+кнопки фильтра #F5F4FA
+цвет границы "Примеры работ" #EEEEEE
+*/
+/* -----------------general styles----------------*/
+:root {
+   --primary-text-color: #757575;
+   --title-text-color: #212121;
+   --accent-color: #2196f3;
+}
+
+body {
+   color: var(--primary-text-color);
+   background-color: #ffffff;
+}
+
+.link {
+   text-decoration: none;
+}
+
+.list {
+   list-style-type: none;
+}
+
+.title {
+   color: var(--title-text-color);
+}
+
+/* ----------------logo ----------------*/
+.logo {
+   color: #000000;
+}
+
+.logo span {
+   color: var(--accent-color);
+}
+
+/* --------------------navigation------------------ */
+.navigation .link {
+   color: var(--title-text-color);
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+   color: var(--accent-color);
+}
+
+/* --------------------header-contacts------------- */
+.header-contacts-list .link {
+   color: var(--primary-text-color);
+}
+
+.header-contacts-list .link:hover,
+.header-contacts-list .link:focus {
+   color: var(--accent-color);
+}
+
+/* ------------------Hero----------------*/
+.hero {
+   background-color: #2f303a;
+}
+
+.hero-title {
+   color: #ffffff;
+   text-transform: uppercase;
+}
+
+/* ---------------features---------------- */
+.feature-title {
+   color: transparent;
+}
+
+.feature-list .title {
+}
+
+/* --------------footer------------------- */
+.footer {
+   background-color: #2f303a;
+}
+
+.footer-address {
+   color: #ffffff;
+}
+
+.footer-mail,
+.footer-tel {
+   color: rgba(255, 255, 255, 0.6);
+}
+
+/* -----------portfolio----------- */
+.portfolio-title {
+   color: transparent;
+}
+
+.examples-list p {
+   color: var(--primary-text-color);
+}
