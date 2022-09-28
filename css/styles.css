@@ -1,27 +1,16 @@
-/* цвет основного текста color: #212121; 
-вторичный цвет color: #757575;
-color: #2196F3; #000000
-color: #FFFFFF;
-
-фон героя и подвала  #2F303A
-фон наша команда background: #F5F4FA;
-
-тел и емейл шапка color: #757575;
-тел и емейл подвал color: rgba(255, 255, 255, 0.6);
-
-кнопки фильтра #F5F4FA
-цвет границы "Примеры работ" #EEEEEE
-*/
-/* -----------------general styles----------------*/
 :root {
    --primary-text-color: #757575;
    --title-text-color: #212121;
    --accent-color: #2196f3;
+   --light-auxiliary-color: #ffffff;
+   --dark-auxiliary-color: #000000;
+   --light-background-color: #f5f4fa;
+   --dark-background-color: #2f303a;
 }
 
 body {
    color: var(--primary-text-color);
-   background-color: #ffffff;
+   background-color: var(--light-auxiliary-color);
 }
 
 .link {
@@ -34,18 +23,54 @@ body {
 
 .title {
    color: var(--title-text-color);
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 42px;
+   letter-spacing: 0.03em;
+}
+
+/* ---------visually-hidden-titles------- */
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
 }
 
 /* ----------------logo ----------------*/
 .logo {
-   color: #000000;
+   color: var(--dark-auxiliary-color);
+   font-family: "Raleway";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 31px;
 }
 
 .logo span {
    color: var(--accent-color);
 }
 
-/* --------------------navigation------------------ */
+/* --------------header------------ */
+.navigation-item,
+.header-contacts-item {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+}
+
 .navigation .link {
    color: var(--title-text-color);
 }
@@ -55,7 +80,6 @@ body {
    color: var(--accent-color);
 }
 
-/* --------------------header-contacts------------- */
 .header-contacts-list .link {
    color: var(--primary-text-color);
 }
@@ -65,31 +89,105 @@ body {
    color: var(--accent-color);
 }
 
+.header-contacts-item {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.02em;
+}
+
 /* ------------------Hero----------------*/
 .hero {
-   background-color: #2f303a;
+   background-color: var(--dark-background-color);
 }
 
 .hero-title {
-   color: #ffffff;
+   color: var(--light-auxiliary-color);
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 60px;
+   text-align: center;
+   letter-spacing: 0.06em;
    text-transform: uppercase;
 }
 
-/* ---------------features---------------- */
-.feature-title {
-   color: transparent;
+.hero-button {
+   background: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   border-width: 0;
+   color: var(--light-auxiliary-color);
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 30px;
+   text-align: center;
 }
 
+/* ---------------features--------------- */
 .feature-list .title {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
 }
 
-/* --------------footer------------------- */
+.feature-list .text {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+}
+/* --------------occupation-------------- */
+.occupation .title {
+   text-align: center;
+}
+
+/* -----------------team----------------- */
+.team {
+   background-color: var(--light-background-color);
+}
+
+.team .title {
+   text-align: center;
+}
+
+.team-card {
+   background-color: var(--light-auxiliary-color);
+   font-family: "Roboto";
+   font-style: normal;
+   font-size: 16px;
+   line-height: 1.19;
+   text-align: center;
+   letter-spacing: 0.03em;
+}
+
+.team-card .title {
+   font-weight: 500;
+   font-size: 16px;
+}
+
+.team-text {
+   font-weight: 400;
+}
+
+/* ----------------footer---------------- */
 .footer {
-   background-color: #2f303a;
+   background-color: var(--dark-background-color);
 }
 
 .footer-address {
-   color: #ffffff;
+   color: var(--light-auxiliary-color);
 }
 
 .footer-mail,
@@ -98,10 +196,6 @@ body {
 }
 
 /* -----------portfolio----------- */
-.portfolio-title {
-   color: transparent;
-}
-
 .examples-list p {
    color: var(--primary-text-color);
 }
