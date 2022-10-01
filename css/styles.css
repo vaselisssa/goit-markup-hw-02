@@ -154,11 +154,16 @@ body {
 }
 
 /* -----------portfolio----------- */
+.example-item {
+   border: 1px solid #eeeeee;
+}
+
 .example-list .title {
    font-weight: 700;
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
+   text-align: left;
 }
 
 .example-list p {
