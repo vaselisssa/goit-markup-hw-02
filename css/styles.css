@@ -11,8 +11,10 @@
 body {
    color: var(--primary-text-color);
    background-color: var(--light-auxiliary-color);
-   font-family: "Roboto";
+   font-family: "Roboto", sans-serif;
    font-style: normal;
+   font-weight: 500;
+   letter-spacing: 0.03em;
 }
 
 .link {
@@ -25,13 +27,10 @@ body {
 
 .title {
    color: var(--title-text-color);
-   /*    font-family: "Roboto";
-   font-style: normal;
- */
    font-weight: 700;
    font-size: 36px;
    line-height: 1.17;
-   letter-spacing: 0.03em;
+   text-align: center;
 }
 
 /* ---------visually-hidden-titles------- */
@@ -53,7 +52,6 @@ body {
 .logo {
    color: var(--dark-auxiliary-color);
    font-family: "Raleway";
-   /* font-style: normal; */
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
@@ -66,10 +64,6 @@ body {
 /* --------------header------------ */
 .navigation-item,
 .header-contacts-item {
-   /*    font-family: "Roboto";
-   font-style: normal;
- */
-   font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
    letter-spacing: 0.02em;
@@ -81,7 +75,8 @@ body {
 
 .navigation .link:hover,
 .navigation .link:focus,
-.navigation .link:active {
+.navigation .link:active,
+.navigation .link.current {
    color: var(--accent-color);
 }
 
@@ -94,16 +89,6 @@ body {
    color: var(--accent-color);
 }
 
-.header-contacts-item {
-   /*    font-family: "Roboto";
-   font-style: normal;
- */
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 1.14;
-   letter-spacing: 0.02em;
-}
-
 /* ------------------Hero----------------*/
 .hero {
    background-color: var(--dark-background-color);
@@ -111,13 +96,9 @@ body {
 
 .hero-title {
    color: var(--light-auxiliary-color);
-   /*    font-family: "Roboto";
-   font-style: normal;
- */
    font-weight: 900;
    font-size: 44px;
    line-height: 60px;
-   text-align: center;
    letter-spacing: 0.06em;
    text-transform: uppercase;
 }
@@ -128,37 +109,28 @@ body {
    border-radius: 4px;
    border-width: 0;
    color: var(--light-auxiliary-color);
-   font-family: "Roboto";
+   font-family: inherit;
    font-style: normal;
    font-weight: 700;
    font-size: 16px;
-   line-height: 30px;
+   line-height: 1.87;
    text-align: center;
+   letter-spacing: 0.06em;
 }
 
 /* ---------------features--------------- */
 .feature-list .title {
-   /* font-family: "Roboto";
-   font-style: normal; */
    font-weight: 700;
    font-size: 14px;
    line-height: 1.14;
-   letter-spacing: 0.03em;
    text-transform: uppercase;
+   text-align: left;
 }
 
 .feature-list .text {
-   /*    font-family: "Roboto";
-   font-style: normal;
- */
    font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
-   letter-spacing: 0.03em;
-}
-/* --------------occupation-------------- */
-.occupation .title {
-   text-align: center;
 }
 
 /* -----------------team----------------- */
@@ -166,23 +138,14 @@ body {
    background-color: var(--light-background-color);
 }
 
-.team .title {
-   text-align: center;
-}
-
 .team-card {
    background-color: var(--light-auxiliary-color);
-   /*    font-family: "Roboto";
-   font-style: normal;
- */
    font-size: 16px;
    line-height: 1.19;
    text-align: center;
-   letter-spacing: 0.03em;
 }
 
 .team-card .title {
-   font-weight: 500;
    font-size: 16px;
 }
 
@@ -191,12 +154,29 @@ body {
 }
 
 /* -----------portfolio----------- */
-.examples-list p {
+.example-list .title {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+
+.example-list p {
    color: var(--primary-text-color);
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.87;
 }
 
 /* ---------------filters---------------- */
 .filter-list .button {
+   background-color: var(--light-background-color);
+   color: var(--title-text-color);
+   font-family: inherit;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.62;
 }
 
 .filter-list .button:hover,
@@ -205,15 +185,24 @@ body {
    background-color: var(--accent-color);
    color: var(--light-auxiliary-color);
    cursor: pointer;
-   font-family: "Roboto";
-   font-style: normal;
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 1.62;
 }
+
 /* ----------------footer---------------- */
 .footer {
    background-color: var(--dark-background-color);
+}
+
+.footer .logo {
+   color: var(--light-auxiliary-color);
+}
+
+.footer-contacts-list .link {
+   font-family: inherit;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
 }
 
 .footer-address {
