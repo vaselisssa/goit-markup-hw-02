@@ -12,8 +12,7 @@ body {
    color: var(--primary-text-color);
    background-color: var(--light-auxiliary-color);
    font-family: "Roboto", sans-serif;
-   font-style: normal;
-   font-weight: 500;
+   font-size: 14px;
    letter-spacing: 0.03em;
 }
 
@@ -27,12 +26,7 @@ body {
 
 .title {
    color: var(--title-text-color);
-   font-weight: 700;
-   font-size: 36px;
-   line-height: 1.17;
-   text-align: center;
 }
-
 /* ---------visually-hidden-titles------- */
 .visually-hidden {
    position: absolute;
@@ -62,30 +56,31 @@ body {
 }
 
 /* --------------header------------ */
-.navigation-item,
-.header-contacts-item {
-   font-size: 14px;
+
+.nav-link,
+.header-contacts-link {
    line-height: 1.14;
    letter-spacing: 0.02em;
+   font-weight: 500;
 }
 
-.navigation .link {
+.nav-link {
    color: var(--title-text-color);
 }
 
-.navigation .link:hover,
-.navigation .link:focus,
-.navigation .link:active,
-.navigation .link.current {
-   color: var(--accent-color);
-}
-
-.header-contacts-list .link {
+.header-contacts-link {
    color: var(--primary-text-color);
 }
 
-.header-contacts-list .link:hover,
-.header-contacts-list .link:focus {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active,
+.nav-link.current {
+   color: var(--accent-color);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
    color: var(--accent-color);
 }
 
@@ -119,18 +114,22 @@ body {
 }
 
 /* ---------------features--------------- */
-.feature-list .title {
-   font-weight: 700;
+.feature-title {
    font-size: 14px;
    line-height: 1.14;
    text-transform: uppercase;
-   text-align: left;
 }
 
 .feature-list .text {
-   font-weight: 400;
-   font-size: 14px;
    line-height: 1.71;
+}
+
+/* -------------occupation-------------- */
+.occupation-title,
+.team-title {
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
 }
 
 /* -----------------team----------------- */
@@ -140,17 +139,19 @@ body {
 
 .team-card {
    background-color: var(--light-auxiliary-color);
+}
+
+.team-card-title {
+   font-weight: 500;
    font-size: 16px;
    line-height: 1.19;
    text-align: center;
 }
 
-.team-card .title {
+.team-card-text {
    font-size: 16px;
-}
-
-.team-text {
-   font-weight: 400;
+   line-height: 1.19;
+   text-align: center;
 }
 
 /* -----------portfolio----------- */
@@ -158,17 +159,14 @@ body {
    border: 1px solid #eeeeee;
 }
 
-.example-list .title {
-   font-weight: 700;
+.example-list-title {
    font-size: 18px;
    line-height: 2;
    letter-spacing: 0.06em;
-   text-align: left;
 }
 
 .example-list p {
    color: var(--primary-text-color);
-   font-weight: 400;
    font-size: 16px;
    line-height: 1.87;
 }
@@ -202,12 +200,8 @@ body {
 }
 
 .footer-contacts-list .link {
-   font-family: inherit;
    font-style: normal;
-   font-weight: 400;
-   font-size: 14px;
    line-height: 1.71;
-   letter-spacing: 0.03em;
 }
 
 .footer-address {
@@ -217,4 +211,9 @@ body {
 .footer-mail,
 .footer-tel {
    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts-list .link:hover,
+.footer-contacts-list .link:focus {
+   color: var(--accent-color);
 }
