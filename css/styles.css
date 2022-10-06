@@ -125,8 +125,7 @@ body {
 }
 
 /* -------------occupation-------------- */
-.occupation-title,
-.team-title {
+.section-title {
    font-size: 36px;
    line-height: 1.17;
    text-align: center;
